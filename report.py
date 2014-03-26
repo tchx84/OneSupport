@@ -37,7 +37,7 @@ def send_report(data):
     tempfile.close()
 
     collector = LogCollect()
-    collector.write_logs(achive=tempfile.name, logbytes=0)
+    collector.write_logs(archive=tempfile.name, logbytes=0)
 
     data['files'].append({'path': tempfile.name,
                           'name': 'logs.zip',
